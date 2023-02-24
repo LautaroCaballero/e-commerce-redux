@@ -10,7 +10,6 @@ export default function Layout() {
       <div className="min-h-screen pt-[50px]">
         <Outlet />
       </div>
-      <Footer />
     </div>
   );
 }

@@ -9,6 +9,8 @@ export default function ProductContainer() {
   const { products } = useProductSelector();
 
   const [filter, setFilter] = useState("");
+  const [loading, setLoading] = useState(true)
+
 
   const filterItems = (filter) => {
     setFilter(filter);
@@ -17,12 +19,13 @@ export default function ProductContainer() {
   useEffect(() => {
     if (!products.length) {
       getProducts();
+      setLoading(false)
     }
   }, []);
 
   return (
     <div>
-      <ul className="flex justify-end mr-20 mt-7 font-semibold">
+      <ul className="flex justify-end mr-8 mt-7 font-semibold">
         <li className="mx-2">
           <button onClick={() => filterItems("jewelery")}>Jewelery</button>
         </li>
@@ -42,7 +45,8 @@ export default function ProductContainer() {
         <li><img className="w-3 h-3 mt-[6.5px] cursor-pointer" onClick={() => filterItems('')} src={RedCross} alt="" /></li>
       </ul>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-        {filter !== ""
+        {
+          filter !== ""
           ? products
               .filter((item) => item.category === filter)
               .map((filteredItem) => {

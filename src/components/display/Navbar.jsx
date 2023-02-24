@@ -23,20 +23,13 @@ export default function Navbar() {
           <li className="mx-2">Contact us</li>
         </ul>
       </div>
-      <div className="flex justify-center">
+      <div className="flex justify-center ml-16 md:ml-0">
         <Link to={"/"}>
           <img src={Logo} alt="" className="w-10 h-10" />
         </Link>
       </div>
       <div className="">
         <ul className="flex justify-end">
-          {/* {NavList.map((item) => {
-            return (
-              <li className="mr-7" key={item.path}>
-                <Link to={item.path}></Link>
-              </li>
-            );
-          })} */}
           <Link to={"/cart"}>
             <li className="h-7 w-7 mr-7">
               <img src={Cart} alt="" />
