@@ -27,7 +27,7 @@ export default function ProductItem({ product }) {
           onClick={() => handleProductInCart(product)}
           className="px-4 py-2 rounded-lg shadow-md bg-emerald-500 hover:bg-emerald-600 text-gray-200 transition-colors"
         >
-          {product.inCart ? "Estoy en el carro" : "no toy"}
+          {product.inCart ? "Already in the cart" : "Add to cart"}
         </button>
       </div>
     </div>

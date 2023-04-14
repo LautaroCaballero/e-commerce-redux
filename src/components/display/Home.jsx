@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div>
       <div className="grid lg:grid-cols-2 bg-red-200 h-[400px] md:h-[400px]  w-[98%] mx-auto rounded-b-md mt-2">
-        <div className="my-auto ml-10 md:w-[100%] md:mx-0">
+        <div className="my-auto ml-10 md:w-[100%] md:mx-0 lg:ml-2">
           <h2 className="text-red-700 font-sans font-medium">
             Join the shopping revolution today!
           </h2>

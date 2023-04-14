@@ -19,7 +19,7 @@ export default function Dashboard() {
   }, [products]);
 
   return (
-    <div className="h-[30vh] md:h-[20vh] lg:h-[100%] lg:w-[100%] bg-red-200">
+    <div className="h-[30vh] md:h-[20vh] lg:h-[100%] lg:w-[20vw] bg-gradient-to-b from-red-200">
       <div className="flex justify-between p-5 lg:p-11 shadow-md">
         <p>Count of product:</p>
         <p>
@@ -29,7 +29,7 @@ export default function Dashboard() {
       <div className="flex justify-between p-5 lg:p-10">
         <p>Total price:</p>
         <p>
-          <span>{totalPrice}</span>
+          <span>{parseFloat(totalPrice).toFixed(2)}</span>
         </p>
       </div>
       <div className="flex justify-center pb-3">
