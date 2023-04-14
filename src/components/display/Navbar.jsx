@@ -11,7 +11,7 @@ export default function Navbar() {
   ];
 
   return (
-    <div className="fixed grid grid-cols-3 bg-white shadow-sm w-[100%] h-14 overflow-hidden items-center font-sans text-black font-medium">
+    <div className="fixed grid grid-cols-3 z-40 bg-white shadow-sm w-[100%] h-14 overflow-hidden items-center font-sans text-black font-medium">
       <div className=" flex flex-1">
         <ul className="flex">
           <Link to={"/"}>
