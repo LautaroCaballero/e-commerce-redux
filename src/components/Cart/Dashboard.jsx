@@ -19,7 +19,7 @@ export default function Dashboard() {
   }, [products]);
 
   return (
-    <div className="h-[30vh] md:h-[20vh] lg:h-[100%] lg:w-[20vw] bg-gradient-to-b from-red-200">
+    <div className="fixed bottom-0 w-full lg:top-0 lg:right-0 lg:w-[20vw] lg:h-full bg-gradient-to-b from-red-200 z-50">
       <div className="flex justify-between p-5 lg:p-11 shadow-md">
         <p>Count of product:</p>
         <p>
@@ -33,7 +33,9 @@ export default function Dashboard() {
         </p>
       </div>
       <div className="flex justify-center pb-3">
-        <button className="w-[250px] lg:w-[150px] h-[40px] bg-red-400 rounded-sm shadow-md">Buy now</button>
+        <button className="w-[250px] lg:w-[150px] h-[40px] bg-red-400 rounded-sm shadow-md">
+          Buy now
+        </button>
       </div>
     </div>
   );
